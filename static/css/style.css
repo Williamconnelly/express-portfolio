@@ -13,22 +13,23 @@ body {
 .landing-wrapper {
   position: relative;
   height: 100vh;
-  width: 100%;
   min-height: 500px;
   max-height: 1080px;
   background: url("../img/bgbg.jpg");
   background-size: cover;
   overflow: hidden;
   background-position: center;
+  padding: 20px 15px;
 }
 
 .landing-content {
-  position: absolute;
+  position: relative;
   z-index: 10;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 50%
   }
 
 .landing-content h1, h2 {
@@ -36,12 +37,12 @@ body {
 }
 
 .landing-content h1 {
-    color: #fff;
-    font-weight: 900;
-    font-size: 5em;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    line-height: 1em;
+  color: #fff;
+  font-weight: 900;
+  font-size: 5em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1em;
 }
 
 .landing-content h2 {
@@ -63,6 +64,81 @@ body {
   z-index: 1;
 }
 
+/* 
+-------------------
+----- Nav Bar -----
+-------------------
+*/
+
+nav {
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 14px 16px;
+  margin: 0 0.3em;
+  font-size: 1.2em;
+}
+
+.site-button {
+  /* background:#67a0bc; */
+  color:#ffffff;
+  border:none;
+  position:relative;
+  font-size:1.2em;
+  padding: 0.6em 1.5em;
+  cursor:pointer;
+  transition:400ms ease all;
+	outline:none;
+	border-radius: 0.2em
+}
+.site-button:hover{
+  /* background: #efefef; */
+  color:#67a0bc;
+}
+
+.site-button:before,.site-button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:0.2em;
+  width:0;
+  background: #67a0bc;
+  transition:400ms ease all;
+}
+.site-button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.site-button:hover:before,.site-button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+/* 
+-------------------------
+----- Landing Icons -----
+-------------------------
+*/
+
+.landing-icon {
+  margin: 0.7em 0.2em;
+  color: #dfdfdf;
+  transition: all 0.3s ease; 
+}
+
+.landing-icon:hover {
+  color: #FF9612;
+}
 
 /* 
 -------------------------
@@ -71,23 +147,13 @@ body {
 */
 
 @media only screen and (max-width : 992px) {
-  .landing-wrapper {
-      height: 110vh;
-      padding: 100px 15px;
-  }
-
   .landing-content {
-      position: relative;
-      transform: none;
-      left: auto;
-      top: auto;
-      margin-top: 10em;
+    margin-top: 1em;
   }
 
   .landing-content h1 {
     font-size: 3em;
-    width: 50%;
-    margin: 0 auto;
+    top: 20%;
   }
 
   .landing-content h2 {
@@ -95,27 +161,12 @@ body {
   }
 }
 
-@media only screen and (max-width : 768px) {
-    .landing-wrapper {
-      height: 110vh;
-      padding: 100px 15px;
-  }
-
+@media only screen and (max-width : 571px) {
   .landing-content {
-      position: relative;
-      transform: none;
-      left: auto;
-      top: auto;
-      margin-top: 10em;
-  }
-
-  .landing-content h1 {
-    font-size: 3em;
     width: 100%;
-    margin: 0 auto;
   }
 
   .landing-content h2 {
-    font-size: 1.75;
+    font-size: 1.2em;
   }
 }
