@@ -145,6 +145,12 @@ nav a {
   color: white;
   text-align: center;
   z-index: 10;
+  padding-right: 0 1em;
+}
+
+.footer p {
+  display: inline-block;
+  margin-right: 2em;
 }
 
 /* 
@@ -165,7 +171,8 @@ nav a {
 }
 
 .landing-icon:hover {
-  color: #FF9612;
+  /* color: #02b3b8; */
+  color: #a0cfee;
 }
 
 /* 
