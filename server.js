@@ -15,6 +15,14 @@ app.get("/", (req, res) => {
 	res.render("index");
 });
 
+app.get("/about", (req, res) => {
+	res.render("about");
+});
+
+app.get("/projects", (req, res) => {
+	res.render("projects");
+});
+
 var server = app.listen(process.env.PORT || 3000);
 {console.log('Now Connected to Port: ' + port)}
 
