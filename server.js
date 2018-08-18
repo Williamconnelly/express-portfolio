@@ -15,10 +15,6 @@ app.get("/", (req, res) => {
 	res.render("index");
 });
 
-app.get('/resume', (req, res) => {
-	res.sendFile(__dirname+ '/static/resume/Scott_Ammon_Resume.pdf');
-})
-
 var server = app.listen(process.env.PORT || 3000);
 {console.log('Now Connected to Port: ' + port)}
 

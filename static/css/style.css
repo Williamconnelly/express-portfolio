@@ -1,0 +1,121 @@
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+------------------------
+----- Landing Page -----
+------------------------
+*/
+
+.landing-wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  min-height: 500px;
+  max-height: 1080px;
+  background: url("../img/bgbg.jpg");
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+}
+
+.landing-content {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  }
+
+.landing-content h1, h2 {
+  margin: 0;
+}
+
+.landing-content h1 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1em;
+}
+
+.landing-content h2 {
+  color: #a0cfee;
+  font-weight: 500;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(5, 69, 112, 0.8);
+  z-index: 1;
+}
+
+
+/* 
+-------------------------
+----- Media Queries -----
+-------------------------
+*/
+
+@media only screen and (max-width : 992px) {
+  .landing-wrapper {
+      height: 110vh;
+      padding: 100px 15px;
+  }
+
+  .landing-content {
+      position: relative;
+      transform: none;
+      left: auto;
+      top: auto;
+      margin-top: 10em;
+  }
+
+  .landing-content h1 {
+    font-size: 3em;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .landing-content h2 {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+    .landing-wrapper {
+      height: 110vh;
+      padding: 100px 15px;
+  }
+
+  .landing-content {
+      position: relative;
+      transform: none;
+      left: auto;
+      top: auto;
+      margin-top: 10em;
+  }
+
+  .landing-content h1 {
+    font-size: 3em;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .landing-content h2 {
+    font-size: 1.75;
+  }
+}
