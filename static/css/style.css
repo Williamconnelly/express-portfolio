@@ -4,6 +4,16 @@ body {
   padding: 0;
 }
 
+.site-wrapper {
+  position: relative;
+  height: 100vh;
+  min-height: 500px;
+  max-height: 1080px;
+  overflow: hidden;
+  padding: 20px 15px;
+  background-color: lightgray;
+}
+
 /* 
 ------------------------
 ----- Landing Page -----
@@ -86,42 +96,38 @@ nav a {
   font-size: 1.2em;
 }
 
-.site-button {
-  /* background:#67a0bc; */
-  color:#ffffff;
-  border:none;
-  position:relative;
-  font-size:1.2em;
-  padding: 0.6em 1.5em;
-  cursor:pointer;
-  transition:400ms ease all;
-	outline:none;
-	border-radius: 0.2em
-}
-.site-button:hover{
-  /* background: #efefef; */
-  color:#67a0bc;
+.nav-buttons a {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.site-button:before,.site-button:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:0.2em;
-  width:0;
-  background: #67a0bc;
-  transition:400ms ease all;
+.nav-buttons a:hover {
+  color: #ffffff;
 }
-.site-button:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
+
+.nav-buttons a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
-.site-button:hover:before,.site-button:hover:after{
-  width:100%;
-  transition:800ms ease all;
+
+.nav-buttons a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /* 
@@ -150,12 +156,33 @@ nav a {
 .landing-icon {
   margin: 0.7em 0.2em;
   color: #dfdfdf;
+  -webkit-transition: all 0.3s ease; 
+	-moz-transition: all 0.3s ease; 
+	-ms-transition: all 0.3s ease; 
+	-o-transition: all 0.3s ease; 
+  transition: all 0.3s ease; 
   transition: all 0.3s ease; 
 }
 
 .landing-icon:hover {
   color: #FF9612;
 }
+
+/* 
+-----------------------
+----- About Page -----
+-----------------------
+*/
+
+
+
+/* 
+-------------------------
+----- Projects Page -----
+-------------------------
+*/
+
+
 
 /* 
 -------------------------
