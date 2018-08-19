@@ -150,7 +150,7 @@ nav a {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #052f4bcc;
+  background-color: #052f4b;
   color: white;
   text-align: center;
   z-index: 10;
@@ -223,6 +223,7 @@ nav a {
 
 .preview-image {
   width: 100%;
+  background-color: #052f4bcc;
 }
 
 .project-content {
@@ -288,6 +289,12 @@ nav a {
   margin-bottom: 2em;
 }
 
+.punchcard-img {
+  margin: 0 auto;
+  width: 30%;
+  border-radius: 1em;
+}
+
 /* 
 -------------------------
 ----- Media Queries -----
@@ -328,5 +335,7 @@ nav a {
     margin: 0 auto;
     margin-bottom: 4em;
   }
-  
+  .punchcard-img {
+    margin-top: 1em;
+  }
 }
