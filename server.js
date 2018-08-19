@@ -23,6 +23,22 @@ app.get("/projects", (req, res) => {
 	res.render("projects");
 });
 
+app.get("/projects/danmaku", (req, res) => {
+	res.render("projects/danmaku");
+});
+
+app.get("/projects/movielist", (req, res) => {
+	res.render("projects/movielist");
+});
+
+app.get("/projects/punchcard", (req, res) => {
+	res.render("projects/punchcard");
+});
+
+app.get("/projects/goodmarket", (req, res) => {
+	res.render("projects/goodmarket");
+});
+
 var server = app.listen(process.env.PORT || 3000);
 {console.log('Now Connected to Port: ' + port)}
 
