@@ -6,12 +6,10 @@ body {
 
 .site-wrapper {
   position: relative;
-  height: 100vh;
-  min-height: 500px;
-  max-height: 1080px;
   overflow: hidden;
   padding: 20px 15px;
-  background-color: #ffffff;
+  background-color: #e9e9e9;
+  /* background-color: #2b587d; */
 }
 
 .site-wrapper .nav-buttons a {
@@ -209,17 +207,18 @@ nav a {
 .projects-wrapper {
   margin: 0 auto;
   width: 70vw;
+  text-align: center;
 }
 
 .project-card {
   display: grid;
-  margin-bottom: 60px;
-  background-color: #fff;
+  margin-bottom: 4em;
+  background-color: #ffffff;
   box-shadow: 0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
-  overflow: hidden;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "preview-image project-content";
+  grid-template-areas: "preview-image project-content"
+                       "project-footer project-footer";
 }
 
 .preview-image {
@@ -228,6 +227,11 @@ nav a {
 
 .project-content {
   grid-area: project-content;
+  padding-top: 1em;
+}
+
+.project-footer {
+  grid-area: project-footer;
 }
 
 .project-title {
@@ -239,18 +243,24 @@ nav a {
 }
 
 .project-button {
-  color: #000000;
+  color: #ffffff;
   margin: 0 0.5em;
   border: 1px solid #000000;
+  background-color: #052f4bcc;
   padding: .4em;
   border-radius: 0.2em;
-  transition: all 0.3s ease; 
+  transition: all 0.3s; 
   display: inline-block;
   text-decoration: none;
 }
 
+.project-button:hover {
+  background-color: #4489b8cc;
+}
+
 .project-desc p {
   margin: 0;
+  padding: 0 2.3em;
 }
 
 .project-tech {
@@ -271,11 +281,11 @@ nav a {
   padding: 8px;
   /* margin-right: 10px; */
   font-size: .85em;
-  color: #525f7f;
+  color: #000000;
 }
 
 .project-title, .project-buttons, .project-desc, .project-tech {
-  margin-bottom: 0.5em;
+  margin-bottom: 2em;
 }
 
 /* 
@@ -307,4 +317,16 @@ nav a {
   .landing-content h2 {
     font-size: 1.2em;
   }
+  .projects-wrapper {
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width : 1263px) {
+  .project-card {
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 4em;
+  }
+  
 }
