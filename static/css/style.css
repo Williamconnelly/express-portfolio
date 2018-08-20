@@ -184,7 +184,8 @@ nav a {
 
 .landing-icon:hover {
   /* color: #02b3b8; */
-  color: #a0cfee;
+  /* color: #a0cfee; */
+  transform: scale(1.5);
 }
 
 /* 
@@ -199,18 +200,45 @@ nav a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "about-content ."
+  grid-template-areas: "profile-image about-content"
 }
 
 .about-content {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "" */
   grid-area: about-content;
 }
 
+.profile-image {
+  grid-area: profile-image
+}
 
+.profile-image img {
+  width: 80%;
+  border-radius: 0.8em;
+}
+
+.skill-container {
+  /* padding: 1em; */
+  border-radius: 1em;
+  margin-bottom: 4em;
+}
+
+.skill-container h6 {
+  margin: 0 0 0.5em 0;
+}
+
+.skillbox p {
+  margin: 0.1em 0;
+  padding: 0;
+  font-size: 0.8em;
+}
+
+.skillbox i {
+  font-size: 3em;
+}
+
+.skillbox div {
+  display: inline-block;
+}
 
 /* 
 -------------------------
