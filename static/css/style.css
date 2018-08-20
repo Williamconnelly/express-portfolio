@@ -201,10 +201,21 @@ nav a {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "profile-image about-content"
+                       "profile-image skills";
 }
 
 .about-content {
   grid-area: about-content;
+}
+
+.skill-container {
+  grid-area: skills
+}
+
+.about-content a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .profile-image {
@@ -214,10 +225,10 @@ nav a {
 .profile-image img {
   width: 80%;
   border-radius: 0.8em;
+  margin-top: 1em;
 }
 
 .skill-container {
-  /* padding: 1em; */
   border-radius: 1em;
   margin-bottom: 4em;
 }
@@ -228,7 +239,6 @@ nav a {
 
 .skillbox p {
   margin: 0.1em 0;
-  padding: 0;
   font-size: 0.8em;
 }
 
@@ -238,7 +248,11 @@ nav a {
 
 .skillbox div {
   display: inline-block;
+  margin: 0 0.8em 0.8em 0.8em;
+  text-align: center;
 }
+
+
 
 /* 
 -------------------------
@@ -369,6 +383,12 @@ nav a {
   .projects-wrapper {
     width: 90vw;
   }
+  .footer p {
+    margin: 0;
+  }
+  .about-wrapper {
+    width: 70vw;
+  }
 }
 
 @media only screen and (max-width : 1263px) {
@@ -379,5 +399,38 @@ nav a {
   }
   .punchcard-img {
     margin-top: 1em;
+  }
+}
+
+@media only screen and (max-width : 1302px) {
+  .about-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "profile-image about-content";
+  }
+  .skill-container {
+    grid-area: auto;
+    width: 200%;
+  }
+}
+
+@media only screen and (max-width : 910px) {
+  .about-wrapper {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .skill-container {
+    grid-area: auto;
+    width: 100%;
+  }
+  .site-wrapper {
+    text-align: center;
+  }
+  .about-content p {
+    text-align: left;
+  }
+  .skillbox div {
+    margin: 0 0.4em 0.8em 0.4em;
+    text-align: center;
   }
 }
