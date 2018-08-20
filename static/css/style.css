@@ -196,7 +196,21 @@ nav a {
 .about-wrapper {
   margin: 0 auto;
   width: 60vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "about-content ."
 }
+
+.about-content {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "" */
+  grid-area: about-content;
+}
+
+
 
 /* 
 -------------------------
@@ -280,7 +294,7 @@ nav a {
   border-radius: 4px;
   border: 2px solid #052f4bcc;
   padding: 8px;
-  /* margin-right: 10px; */
+  margin-bottom: 0.3em;
   font-size: .85em;
   color: #000000;
 }
