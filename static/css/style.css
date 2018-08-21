@@ -357,6 +357,13 @@ nav a {
   height: 100%;
 }
 
+.project-prompt {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.7em;
+  padding: 1em;
+}
+
 /* 
 ------------------
 ----- Header -----
