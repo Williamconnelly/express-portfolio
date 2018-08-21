@@ -206,6 +206,7 @@ nav a {
 
 .about-content {
   grid-area: about-content;
+  line-height: 2em;
 }
 
 .skill-container {
@@ -263,6 +264,7 @@ nav a {
 .projects-wrapper {
   margin: 0 auto;
   width: 70vw;
+  margin-top: 1em;
   text-align: center;
 }
 
@@ -349,6 +351,24 @@ nav a {
   margin: 0 auto;
   width: 30%;
   border-radius: 1em;
+}
+
+/* 
+------------------
+----- Header -----
+------------------
+*/
+
+.page-header {
+  text-align: center;
+  background-color: #052f4b;
+  color: #ffffff;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.page-header h1, h3 {
+  margin: 0;
 }
 
 /* 
