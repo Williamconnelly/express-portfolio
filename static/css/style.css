@@ -375,7 +375,46 @@ nav a {
   margin: 0 auto;
 }
 
+.details-wrapper header h1 {
+  font-size: 3em;
+  margin: 0.3em 0;
+  text-align: center;
+}
 
+.detail-image {
+  text-align: center;
+}
+
+.details-wrapper img {
+  width: 80%;
+  max-height: 403px;
+}
+
+.details-wrapper ul {
+  list-style: none;
+  padding: 0;
+}
+
+.details-wrapper p {
+  text-align: left;
+}
+
+.details-wrapper li {
+  text-align: center;
+}
+
+.tech-details {
+  display: inline-block;
+  width: 48%;
+}
+
+.tech-details h3 {
+  text-align: center;
+}
+
+.tech-wrapper {
+  margin: 3em;
+}
 
 /* 
 ------------------
