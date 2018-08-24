@@ -401,11 +401,13 @@ nav a {
 
 .details-wrapper li {
   text-align: center;
+  vertical-align: top;
 }
 
 .tech-details {
   display: inline-block;
   width: 48%;
+  vertical-align: top;
 }
 
 .tech-details h3 {
