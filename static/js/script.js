@@ -13,6 +13,9 @@ var addGifHover = () => {
         case(image.classList.contains("punchcard-img")):
           image.src = "../img/punchcard.gif"
           break;
+        case(image.classList.contains("goodmarket-img")):
+          image.src = "../img/goodmarket.gif"
+          break;
         default:
           break;
       }
@@ -27,6 +30,9 @@ var addGifHover = () => {
           break;
         case(image.classList.contains("punchcard-img")):
           image.src = "../img/punchcard.png"
+          break;
+        case(image.classList.contains("goodmarket-img")):
+          image.src = "../img/goodmarket.png"
           break;
         default:
           break;
