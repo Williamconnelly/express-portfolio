@@ -401,6 +401,7 @@ nav a {
 .tech-wrapper ul {
   list-style: none;
   padding: 0;
+  margin-top: 0;
 }
 
 .details-wrapper p {
@@ -423,7 +424,7 @@ nav a {
 }
 
 .tech-wrapper {
-  margin: 3em;
+  margin: 2em 0 3em 0;
   text-align: center;
 }
 
@@ -484,6 +485,16 @@ nav a {
   }
   .details-wrapper img {
     width: 100%;
+  }
+  .tech-wrapper {
+    margin: 0 0 3em 0;
+    text-align: left;
+  }
+  .tech-details {
+    display: block;
+  }
+  .tech-details h3, .tech-details li {
+    text-align: left;
   }
 }
 
