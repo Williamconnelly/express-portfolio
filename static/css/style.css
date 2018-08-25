@@ -391,6 +391,14 @@ nav a {
 }
 
 .details-wrapper ul {
+  padding-left: 1em;
+}
+
+.details-wrapper span {
+  font-weight: bold;
+}
+
+.tech-wrapper ul {
   list-style: none;
   padding: 0;
 }
@@ -399,7 +407,7 @@ nav a {
   text-align: left;
 }
 
-.details-wrapper li {
+.tech-wrapper li {
   text-align: center;
   vertical-align: top;
 }
