@@ -15,15 +15,31 @@
     </div>
     <div>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, nisi quas! Veniam, corporis!
-        Animi quae debitis dolorem fuga suscipit expedita? Earum rem neque ipsam excepturi? 
-        Consectetur quod accusantium similique necessitatibus? Lorem ipsum dolor, sit amet consectetur 
-        adipisicing elit. Sed, nisi quas! Veniam, corporis!
-        Animi quae debitis dolorem fuga suscipit expedita? Earum rem neque ipsam excepturi? 
-        Consectetur quod accusantium similique necessitatibus? Lorem ipsum dolor, sit amet 
-        consectetur adipisicing elit. Sed, nisi quas! Veniam, corporis!
-        Animi quae debitis dolorem fuga suscipit expedita? Earum rem neque ipsam excepturi? 
-        Consectetur quod accusantium similique necessitatibus?
+        Danmaku is a fast-paced, arcade shooter where the player controls a single ship and attempts to 
+        outmaneuver enemy fire while using their own projectiles to defeat them and achieve a progressively 
+        higher score. The name of the game stems from a direct homage to the genre it attempts to emulate - 
+        (弾幕) - which translates to “barrage”. 
+      <br />
+      <br />
+        The general aspiration behind Danmaku’s creation was that I wanted to make a game that was both 
+        frenetic and one which relied upon the user’s precise inputs to determine their success and failure. 
+        Thus I arrived at the arcade-shooter as my genre of choice, a game-design that allows for very little 
+        error but also for a player’s absolute freedom in how they decide to move upon each axis, the order in 
+        which they dispatch their opponents, and how they time each action. 
+      <br />
+      <br />
+        One point of intrigue is that the entire game is accomplished through simple DOM manipulation
+        done through jQuery. The game runs on a loop of 60 frames a second and compares the state of the DOM to 
+        ever-changing input-variables in order to update the game's display roughly every 17 milliseconds. 
+        Initially this expensive process of updating everything active in the game screen at once proved to be
+        too much however after switching to a more object-oriented paradigm, the game updates quite smoothly. 
+        Though admittedly an afterthought, Danmaku also supports two-player co-op which can be toggled on or 
+        off when first starting the game. 
+      <br />
+      <br />
+        You can read an extensive account of the game's development in it's 
+        <a target="blank" href="https://github.com/Williamconnelly/danmaku-project/blob/master/README.md">README</a> 
+        on github.
       </p>
     </div>
     <div class="tech-wrapper">
